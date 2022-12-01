@@ -15,5 +15,12 @@ class TestAritmetica(unittest.TestCase):
         self.assertEqual(arit.suma(1,-1), 0)
         self.assertEqual(arit.suma(-1,-1), -2)
 
+    #especifico un test unitario para la funcion dividir
+    def test_sumar(self):
+        self.assertEqual(arit.divide(0,1), 0)
+        with self.assertRaises(ZeroDivisionError):
+            arit.divide(2,0)
+
+
 if __name__ == "__main__":
     unittest.main()

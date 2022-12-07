@@ -9,8 +9,10 @@ class TestAritmetica(unittest.TestCase):
         #Lo que esperabamos obtener y lo que obteníamos de verdad
         self.assertEqual(arit.suma(2,3), 5)
         self.assertEqual(arit.suma(4,6), 10)
-        #self.assertEqual(arit.suma("a","b"), ValueError)
-        #self.assertEqual(arit.suma("a",1), ValueError)
+        with self.assertRaises(ValueError):
+            arit.suma("a","b")
+        with self.assertRaises(ValueError):
+            arit.suma("a",1)
         self.assertEqual(arit.suma(0,-1), -1)
         self.assertEqual(arit.suma(1,-1), 0)
         self.assertEqual(arit.suma(-1,-1), -2)

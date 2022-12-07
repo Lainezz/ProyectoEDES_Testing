@@ -6,6 +6,8 @@ def suma(x, y):
         y: segundo valor a sumar
     return: x+y
     """
+    if(type(x) != int or type(y) != int):
+        raise ValueError
     return y+x
 
 def resta(x, y):
@@ -16,7 +18,9 @@ def resta(x, y):
         y: segundo valor a restar
     return: x-y
     """
-    return y-x
+    if(type(x) != int or type(y) != int):
+        raise ValueError
+    return x-y
 
 def multiplica(x, y):
     """
@@ -26,7 +30,9 @@ def multiplica(x, y):
         y: segundo valor a multiplicar
     return: x*y
     """
-    return x**y
+    if(type(x) != int or type(y) != int):
+        raise ValueError
+    return x*y
 
 def divide(x, y):
     """
@@ -36,4 +42,6 @@ def divide(x, y):
         y: divisor
     return: x/y
     """
-    return x//y
+    if(type(x) != int or type(y) != int or y==0):
+        raise ValueError
+    return x/y

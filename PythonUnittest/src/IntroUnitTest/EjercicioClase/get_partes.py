@@ -20,3 +20,26 @@ Función a probar: get_parte_entera
 ¿Qué compruebo?     Val.Entrada     Res.Esperado    Res.Obtenido
 assertEqual()       1.02            1               ?
 """
+def get_parte_entera(numero):
+    
+    if(type(numero) is not int and type(numero) is not float):
+        raise ValueError
+
+    st_numero = str(numero)
+    arr_numero = st_numero.split(".")
+    return int(arr_numero[0])
+
+
+def get_parte_decimal(numero):
+
+    if(type(numero) is not int and type(numero) is not float):
+        raise ValueError
+
+    st_numero = str(numero)
+    arr_numero = st_numero.split(".")
+    return float(0) if(len(arr_numero) == 1) else float("0."+arr_numero[1])
+
+
+if __name__ == "__main__":
+    print(get_parte_decimal(1))
+    

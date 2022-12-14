@@ -1,6 +1,6 @@
-# EDES_Py
-<h1>Repo para EDES. IES Rafael Alberti</h1>
-<p>Aquí se irán subiendo todos los ejercicios y todo lo que se vaya haciendo en clase.</p>
+# ProyectoEDES_Testing
+<h1>Proyecto de Testing para el Tema03</h1>
+<p>El enunciado del proyecto se incluye dentro del archivo de la tarea de moodle</p>
 <p>Pasos para replicar este repositorio en local con VSCode:</p>
 <ol>
       <li>Abrir VSCode</li>
@@ -17,7 +17,7 @@
       <li>Una vez con la terminal Git bash abierta, navegar hasta la carpeta que contendrá los proyectos</li>
       <li>Situados en la carpeta que contendrá todos los proyectos (el workspace) escribir la siguiente instrucción en la terminal</li>
       <ul>
-            <li>git clone https://github.com/Lainezz/EDES_Py.git</li>
+            <li>git clone https://github.com/Lainezz/ProyectoEDES_Testing.git</li>
       </ul>
       <li>Ya tendríamos el repositorio clonado</li>
 </ol>

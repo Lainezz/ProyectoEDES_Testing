@@ -1,7 +1,8 @@
 def burbuja_0(lista):
     """Algoritmo Ordenacion Burbuja
-    PRUEBA ESTÁTICA. REQUISITO FUNCIONAL
-    Esta función tiene 1 error de implementación
+    
+    ERRORES
+    Esta función tiene 1 error de implementación (Funcional)
 
     Funcion que recibe por parametros una lista desordenada y que devuelve
     la misma lista pero con los elementos ya ordenados de menor a mayor 
@@ -10,6 +11,7 @@ def burbuja_0(lista):
         Documentacion: <link to https://es.wikipedia.org/wiki/Ordenamiento_de_burbuja>
     Args:
         lista: lista con los valores desordenados
+    
     """
     for i in range(len(lista)):
         for j in range(len(lista)):
@@ -20,8 +22,9 @@ def burbuja_0(lista):
 
 def burbuja_1(lista):
     """Algoritmo Ordenacion Burbuja
-    PRUEBA DINAMICA. REQUISITO FUNCIONAL
-    Esta función tiene 1 error de implementación        
+    
+    ERRORES
+    Esta función tiene 1 error de implementación (Funcional)        
     
     Funcion que recibe por parametros una lista desordenada y que devuelve
     la misma lista pero con los elementos ya ordenados de menor a mayor 
@@ -40,8 +43,9 @@ def burbuja_1(lista):
 
 def burbuja_2(lista):
     """Algoritmo Ordenacion Burbuja
-    PRUEBA DINAMICA. REQUISITO NO FUNCIONAL
-    Esta función tiene 1 error de rendimiento
+    
+    ERRORES
+    Esta función tiene 1 error de rendimiento (No Funcional)
 
     Funcion que recibe por parametros una lista desordenada y que devuelve
     la misma lista pero con los elementos ya ordenados de menor a mayor 
@@ -61,8 +65,9 @@ def burbuja_2(lista):
 
 def burbuja_3(lista):
     """Algoritmo Ordenacion Burbuja
-    PRUEBA DINAMICA. REQUISITO NO FUNCIONAL
-    Esta función tiene 1 error de aceptación
+    
+    ERRORES
+    Esta función tiene 1 error de aceptación (No funcional)
 
     Funcion que recibe por parametros una lista desordenada y que devuelve
     la misma lista pero con los elementos ya ordenados de menor a mayor 

@@ -3,8 +3,8 @@ def busqueda_binaria_error(lista, x):
     Búsqueda binaria
     Precondición: lista está ordenada
 
-    En esta función existen 2 errores.
-    1 error de implementación (Funcional)
+    ERRORES
+    2 errores de implementación (Funcional)
     1 error de eficiencia (No funcional)
     
     Busca en toda la lista dividiéndola en segmentos y considerando
@@ -13,6 +13,8 @@ def busqueda_binaria_error(lista, x):
 
     Devuelve -1 si x no está en lista;
     Devuelve p siendo p la posicion dentro de la lista, tal que lista[p] == x, si x está en lista
+
+    Si la lista contiene algún elemento que no sea de tipo Int o si x no es Int, se debe arrojar una excepcion de tipo TypeExcepcion
     """
 
     izq = 0 # izq guarda el índice inicio del segmento

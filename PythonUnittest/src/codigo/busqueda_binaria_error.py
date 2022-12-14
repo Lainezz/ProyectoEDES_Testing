@@ -32,19 +32,3 @@ def busqueda_binaria_error(lista, x):
             izq = medio
 
     return -1
-    
-
-# Código para probar la búsqueda binaria
-def main():
-    lista = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-    val = 9
-
-    pos = busqueda_binaria_error(lista, val)
-
-    if(pos==-1):
-        print(f"El elemento {val} no se encuentra en la lista")
-    else:
-        print(f"El elemento {val} se encuentra en la posicion {pos} de la lista")
-
-if __name__ == "__main__":
-    main()

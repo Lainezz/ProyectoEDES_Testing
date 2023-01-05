@@ -1,5 +1,5 @@
 # ProyectoEDES_Testing
-<h1>Proyecto de Testing para el Tema03</h1>
+<h1>Proyecto de Testing para el Tema03 y 04</h1>
 <p>El enunciado del proyecto se incluye dentro del archivo de la tarea de moodle</p>
 <p>Pasos para replicar este repositorio en local con VSCode:</p>
 <ol>

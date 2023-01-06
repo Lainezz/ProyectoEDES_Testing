@@ -34,7 +34,7 @@ class CuentaBancaria():
         return self.operar(cantidad)
     
     def retirar(self, cantidad):
-        return self.operar(-cantidad)
+        return self.operar(-abs(cantidad))
 
     def operar(self, cantidad):
         if self.saldo + cantidad <= self.SALDO_MINIMO:

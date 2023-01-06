@@ -40,10 +40,10 @@ class CuentaBancaria():
         if self.saldo + cantidad <= self.SALDO_MINIMO:
             raise CuentaException.CuentaException(f"La operación no se puede realizar porque tendríamos un saldo inferior a {self.SALDO_MINIMO}")
         
-        #self.saldo += cantidad
+        self.saldo += cantidad
         self.movimientos.append(cantidad)
 
-        if self.saldo < 0.0 and abs(cantidad) > self.AVISAR_HACIENDA:
+        if self.saldo <= 0.0 and abs(cantidad) >= self.AVISAR_HACIENDA:
             raise AvisarHaciendaAndSaldoException.AvisarHaciendaAndSaldoException(self.iban, self.titular, self.tipo_operacion(cantidad), abs(cantidad), "Aviso: Saldo en cuenta negativo")
         elif self.saldo < 0.0:
             raise Exception("Aviso: Saldo en cuenta negativo")
